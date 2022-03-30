@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<style>
-#messages
-{
-background-color:yellow;
-font-size:3;
-font-weight:bold;
-line-height:140%;
-}
-#status
-{
-background-color:red;
-font-size:4;
-font-weight:bold;
-color:white;
-line-height:140%;
-}
-    body {
-    margin: 0;
-    padding: 0;
-    background-color: #F4FDFF;
-    font-family: Arial;
-  }
+<link rel="stylesheet" href= "styles.css"></link>
 
-#map {
-  height: 50vh;
-  width: 50vw;
-
-}
-
-
-</style>
   <head>
     <title>Temperature App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +10,40 @@ line-height:140%;
  	<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
       <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+<style>
+  #messages
+  {
+  background-color:yellow;
+  font-size:3;
+  font-weight:bold;
+  line-height:140%;
+  }
+
+  #status
+  {
+  background-color: red;
+  font-size: 4;
+  font-weight: bold;
+  color: white;
+  line-height: 140%;
+  }
+
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  }
+
+  #map {
+    height: 50vh;
+    width: 50vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+</style>
+
+
   </head>
 
   <body>
